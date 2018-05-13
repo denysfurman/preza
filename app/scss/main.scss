@@ -27,7 +27,7 @@ body {
 	line-height: 1.65;
 	
 	overflow-x: hidden;
-	background-color: #272d3b;
+
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	input, textarea {
@@ -94,5 +94,5 @@ ul{
 
 
 
-
+@import "header";
 @import "media"; // Always at the end
