@@ -24,7 +24,7 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 1.45;
 	
 	overflow-x: hidden;
 	background-color: #fff;
@@ -99,7 +99,9 @@ h2{
 	padding-right: 70px;
 
 }
-
+.container{
+	padding: 0;
+}
 .page{
 	display: flex;
 
@@ -117,7 +119,7 @@ h2{
 	background-color: #2174fe;
 	padding: 0 20px;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 50px;
 	display: flex;
 	justify-content: center;
@@ -136,6 +138,7 @@ h2{
 	}
 }
 
+
 .button_yelow{
 	height: 50px;
 	box-shadow: 0 1px 0 rgba(254, 243, 0, 0.39);
@@ -143,9 +146,9 @@ h2{
 	background-color: #fef300;
 	padding: 0 30px;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 50px;
-	display: flex;
+	text-align: center;
 	justify-content: center;
 	align-content: center;
 	color: #30353d;
@@ -153,7 +156,7 @@ h2{
 
 	transition: transform 0.2s ease-in-out;
 	i{
-		margin-right: 6px;
+		margin-right: 8px;
 		position: relative;
 		top: -2px;
 	}
