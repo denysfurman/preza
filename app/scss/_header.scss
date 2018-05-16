@@ -133,7 +133,7 @@ $btn-material-size: 60px;
   z-index: 10;
   .btn-material {
     position: absolute;
-    top: 24px;
+    top: 20px;
     width: $btn-material-size;
     height: $btn-material-size;
     right: $btn-material-size;
@@ -152,7 +152,7 @@ $btn-material-size: 60px;
   .icon-material-search {
     color: #fff;
     position: absolute;
-    top: 40px;
+    top: 37px;
     right: 75px;
     -webkit-transition: opacity .4s ease-in-out;
     -o-transition: opacity .4s ease-in-out;
@@ -170,3 +170,8 @@ $btn-material-size: 60px;
   padding-top: 15px;
   padding-bottom: 25px;
 }
+
+
+
+
+

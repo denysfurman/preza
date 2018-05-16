@@ -27,9 +27,9 @@ body {
 	line-height: 1.65;
 	
 	overflow-x: hidden;
-
+	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
+	color: #4b525d;
 	input, textarea {
 			border: #666 1px solid;
 			outline: none;
@@ -81,6 +81,14 @@ ul{
 		list-style: none;
 	}
 }
+h2{
+	color: #30353d;
+
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
 .page{
 
 }
@@ -92,7 +100,71 @@ ul{
 
 }
 
+.page{
+	display: flex;
 
+}
+
+.button_wr{
+	display: flex;
+	margin-top: 20px;
+
+}
+.button_blue{
+	height: 50px;
+	box-shadow: 0 1px 0 rgba(74, 155, 255, 0.6);
+	border-radius: 25px;
+	background-color: #2174fe;
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-right: 20px;
+	transition: transform 0.2s ease-in-out;
+	i{
+		margin-right: 10px;
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+	&:hover{
+		transform: scale(0.95);
+		color: #fff;
+	}
+}
+
+.button_yelow{
+	height: 50px;
+	box-shadow: 0 1px 0 rgba(254, 243, 0, 0.39);
+	border-radius: 25px;
+	background-color: #fef300;
+	padding: 0 30px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: #30353d;
+	display: inline-block;
+
+	transition: transform 0.2s ease-in-out;
+	i{
+		margin-right: 6px;
+		position: relative;
+		top: -2px;
+	}
+
+	&:hover{
+		transform: scale(0.95);
+		color: #30353d;
+
+	}
+}
 
 @import "header";
+@import "page_1";
 @import "media"; // Always at the end
