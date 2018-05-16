@@ -168,6 +168,14 @@ h2{
 	}
 }
 
+div#scroll {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
 @import "header";
 @import "page_1";
 @import "media"; // Always at the end

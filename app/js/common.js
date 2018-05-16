@@ -17,6 +17,39 @@ jQuery(document).ready(function($){
 });
 
 
+$(function() {
+    var ele   = $('#scroll');
+    var speed = 70, scroll = 5, scrolling;
+
+    $('#scroll-up').mouseenter(function() {
+        // Scroll the element up
+        scrolling = window.setInterval(function() {
+            ele.scrollTop( ele.scrollTop() - scroll );
+        }, speed);
+    });
+
+    $('#scroll-down').mouseenter(function() {
+        // Scroll the element down
+        scrolling = window.setInterval(function() {
+            ele.scrollTop( ele.scrollTop() + scroll );
+        }, speed);
+    });
+
+    $('#scroll-up, #scroll-down').bind({
+        click: function(e) {
+            // Prevent the default click action
+            e.preventDefault();
+        },
+        mouseleave: function() {
+            if (scrolling) {
+                window.clearInterval(scrolling);
+                scrolling = false;
+            }
+        }
+    });
+});
+
+
 
 
 
