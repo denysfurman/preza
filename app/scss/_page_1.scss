@@ -221,9 +221,11 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 25px;
+  padding-bottom: 0;
   ul{
     column-count: 3;
     li{
+      margin-bottom: 4px;
 
       position: relative;
       &:before{

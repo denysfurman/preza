@@ -10,6 +10,9 @@ body {
   &.search-active {
     overflow: hidden;
     height: 100vh;
+    .container{
+      display: none;
+    }
 
     .search-input {
       opacity: 1;
@@ -23,6 +26,7 @@ body {
     .control {
       cursor: default;
       height: 100vh;
+      position: relative;
       .btn-material {
         transform: scale(70);
         background-image: none;
@@ -73,9 +77,9 @@ $btn-material-size: 60px;
   opacity: 0;
 
 
-  transition: all 0s ease-in-out;
+  transition: all .2s ease-in-out;
   z-index: 15;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #FFF;
   width: calc(100% - 200px);
 
 
@@ -91,6 +95,7 @@ $btn-material-size: 60px;
     font-weight: 200;
     width: 100%;
     line-height: 80px;
+    border-color: #fff;
   }
   ::-webkit-input-placeholder {
     color: $color-placeholder;
@@ -130,8 +135,11 @@ $btn-material-size: 60px;
 
 .control {
 
-  position: relative;
+  position: absolute;
   z-index: 10;
+  right: 0;
+  top: 2px;
+
   .btn-material {
     position: absolute;
     top: 20px;
@@ -145,7 +153,7 @@ $btn-material-size: 60px;
     transform-origin: 50%;
     display: inline-block;
     z-index: 10;
-    transition: all 0.6s ease;
+    transition: all 0.7s ease;
     cursor: pointer;
 
 
@@ -155,9 +163,8 @@ $btn-material-size: 60px;
     position: absolute;
     top: 37px;
     right: 75px;
-    -webkit-transition: opacity .4s ease-in-out;
-    -o-transition: opacity .4s ease-in-out;
-    transition: opacity .4s ease-in-out;
+
+    transition: opacity .2s ease-in-out;
     width: 27px;
     z-index: 11;
     cursor: pointer;

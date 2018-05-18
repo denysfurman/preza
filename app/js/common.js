@@ -33,6 +33,7 @@ $(function() {
         scrolling = window.setInterval(function() {
             ele.scrollTop( ele.scrollTop() + scroll );
         }, speed);
+
     });
 
     $('#scroll-up, #scroll-down').bind({
