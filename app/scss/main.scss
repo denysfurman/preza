@@ -168,13 +168,7 @@ h2{
 	}
 }
 
-div#scroll {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  padding: 4px;
-  margin-bottom: 20px;
-}
+
 
 
 $jelly-color: #5488dd;
@@ -257,4 +251,5 @@ $size: 110px;
 
 @import "header";
 @import "page_1";
+@import "page_5";
 @import "media"; // Always at the end

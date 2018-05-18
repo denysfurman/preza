@@ -14,12 +14,18 @@ jQuery(document).ready(function($){
         $('.icon-close').fadeOut();
     });
 
+    $(".fancybox_gall").fancybox({
+        thumbs : {
+            autoStart : true
+        }
+    });
+
 });
 
 
 $(function() {
     var ele   = $('#scroll');
-    var speed = 70, scroll = 5, scrolling;
+    var speed = 100, scroll = 10, scrolling;
 
     $('#scroll-up').mouseenter(function() {
         // Scroll the element up
