@@ -163,6 +163,7 @@ div#scroll {
 
     img{
       height: 230px;
+      border: 1px solid #eef2f7;
     }
   }
 }
@@ -263,7 +264,7 @@ div#scroll {
   background-color: #fff;
   .scroll_wr{
     border: none;
-    height: 575px;
+    height: 580px;
     padding: 0;
     padding-right: 47px;
 
@@ -363,5 +364,44 @@ div#scroll{
 
 
     }
+  }
+}
+.title .exit{
+  width: 54px;
+  height: 54px;
+  box-shadow: 0 2px 5px rgba(13, 24, 41, 0.15);
+  background-color: #32363f;
+  background-image: linear-gradient(to top, #f5f7f8 0%, #ffffff 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 20px;
+  float: left;
+  margin-top: -15px;
+}
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.rest_title{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  color: #30353d;
+  span{
+    font-size: 22px;
+    font-weight: 400;
+  }
+  p{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+    
   }
 }
