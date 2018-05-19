@@ -2,7 +2,7 @@
 
 
 jQuery(document).ready(function($){
-
+   // serch
     $('.control , .icon-material-search , .icon-material-search img , .btn-material').click( function(){
         $('body').addClass('search-active');
         $('.input-search').focus();
@@ -14,15 +14,32 @@ jQuery(document).ready(function($){
         $('.icon-close').fadeOut();
     });
 
+    //gallery
+
     $(".fancybox_gall").fancybox({
-        thumbs : {
-            autoStart : true
-        }
+
     });
+
+    //tabs
+    $('.tabgroup > div').hide();
+    $('.tabgroup > div:first-of-type').show();
+    $('.tabs a').click(function(e){
+        e.preventDefault();
+        var $this = $(this),
+            tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('li').siblings().children('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('div').hide();
+        $(target).show();
+
+    })
+
 
 });
 
-
+//scroll
 $(function() {
     var ele   = $('#scroll');
     var speed = 100, scroll = 10, scrolling;
