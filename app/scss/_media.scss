@@ -23,12 +23,49 @@
   .menu.fitnes{
     width: 100%;
   }
+  .start_page{
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    display: inline-block;
+    background-image: none;
 
+  }
+  .start_page .logo_panel {
+    margin: 90px 0;
+    width: 100%;
+    height: auto;
+
+
+  }
+  .start_page .logo_panel span {
+    color: #175ed3;
+    height: 124px;
+    font-size: 220px;
+  }
+  .start_panel{
+    height: auto;
+    float: none;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .start_panel a {
+    position: absolute;
+    top: 0;
+    top: 37px;
+  }
 }
 @media only screen and (max-width: 1279px) {
   .weather_item{
     display: none;
   }
+
 }
 
 
