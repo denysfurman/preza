@@ -10,7 +10,7 @@
     .grey_inf{
       width: 300px;
       float: right;
-      margin-top: -71px;
+      margin-top: -86px;
       margin-right: 0;
     }
   }
@@ -112,6 +112,24 @@ div#scroll {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+  }
+  h2{
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  ul{
+    padding-left: 20px;
+    list-style: disc;
+    margin-bottom: 20px;
+    li{
+      list-style: disc;
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -324,7 +342,7 @@ div#scroll{
     display: flex;
     flex-direction: column;
     li{
-      height: 83px;
+      height: 79px;
       border-bottom: 2px solid #eef2f7;
       display: flex;
       padding: 0 25px;
@@ -473,4 +491,11 @@ div#scroll{
       border-bottom: none;
     }
   }
+}
+
+.fitnes .scroll_wr{
+  height: 582px;
+}
+.fancybox_gall{
+  width: 100%;
 }

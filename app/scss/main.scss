@@ -263,7 +263,21 @@ $size: 110px;
 	}
 }
 
-
+.menu_list{
+  color: #000;
+  a{
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.page_list_m .hotel_wr{
+  width: 100%;
+}
 @import "header";
 @import "page_1";
 @import "page_5";
